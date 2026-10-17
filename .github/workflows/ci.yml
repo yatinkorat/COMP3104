@@ -1,6 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI - Node Project Setup
+name: Deploy React App COMP3104 DevOps Project CI
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 # Controls when the workflow will run
 on:
@@ -39,3 +40,15 @@ jobs:
       # Step 4: Run tests
       - name: Run tests
         run: npm test
+
+      # Deploy to GitHub Pages
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
