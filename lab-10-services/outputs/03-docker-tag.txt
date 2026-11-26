@@ -1,0 +1,10 @@
+﻿PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> docker tag 9837e200811d yatinkorat/hellodocker:1.0
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> docker tag 9837e200811d yatinkorat/hellodocker:latest
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> docker images --filter "reference=hellodocker" --filter "reference=yatinkorat/hellodocker"
+IMAGE                           ID             DISK USAGE   CONTENT SIZE   EXTRA
+hellodocker:latest              9837e200811d        223MB         54.4MB   U    
+yatinkorat/hellodocker:1.0      9837e200811d        223MB         54.4MB   U    
+yatinkorat/hellodocker:latest   9837e200811d        223MB         54.4MB   U    
+

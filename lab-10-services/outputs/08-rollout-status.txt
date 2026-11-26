@@ -1,0 +1,9 @@
+﻿PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl rollout status deployment/hellodocker --timeout=300s
+Waiting for deployment "hellodocker" rollout to finish: 0 of 3 updated replicas are available...
+Waiting for deployment "hellodocker" rollout to finish: 1 of 3 updated replicas are available...
+Waiting for deployment "hellodocker" rollout to finish: 2 of 3 updated replicas are available...
+deployment "hellodocker" successfully rolled out
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl rollout status deployment/redis --timeout=180s
+deployment "redis" successfully rolled out
+

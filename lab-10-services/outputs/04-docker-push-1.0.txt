@@ -1,0 +1,12 @@
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> docker push yatinkorat/hellodocker:1.0
+The push refers to repository [docker.io/yatinkorat/hellodocker]
+7a40f4aeafb6: Pushed
+44136fa355b3: Pushed
+37fb86c2a767: Mounted from library/redis
+53daecf7856e: Pushed
+7efbce397249: Pushed
+bbe7053e6def: Pushed
+d72d543d537e: Pushed
+7e68e54765f6: Pushed
+f4d073c2be8d: Pushed
+1.0: digest: sha256:9837e200811d57ee123dc5741f0936f0b85a9f41f1a3929e8717811ebcfd5356 size: 856

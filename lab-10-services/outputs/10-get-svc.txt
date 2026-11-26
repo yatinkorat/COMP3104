@@ -1,0 +1,14 @@
+﻿PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl get svc hellodocker-nodeport
+NAME                   TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+hellodocker-nodeport   NodePort   10.105.20.81   <none>        80:30080/TCP   28s
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl get svc
+NAME                   TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+hellodocker-nodeport   NodePort    10.105.20.81   <none>        80:30080/TCP   28s
+kubernetes             ClusterIP   10.96.0.1      <none>        443/TCP        14d
+redis                  ClusterIP   10.97.26.16    <none>        6379/TCP       28s
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl get endpointslices -l kubernetes.io/service-name=hellodocker-nodeport
+NAME                         ADDRESSTYPE   PORTS   ENDPOINTS                          AGE
+hellodocker-nodeport-g98hn   IPv4          80      10.244.0.7,10.244.0.6,10.244.0.5   28s
+

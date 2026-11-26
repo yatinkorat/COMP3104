@@ -1,0 +1,14 @@
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> $MINIKUBE_IP = $(minikube ip); $MINIKUBE_IP
+192.168.49.2
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> curl.exe -s -m 5 http://${MINIKUBE_IP}:30080
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> "curl exit code: $LASTEXITCODE"
+curl exit code: 28
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> minikube ssh "curl -s http://${MINIKUBE_IP}:30080"
+<h3>Hello Yatin from Minikube and Kubernetes!</h3><b>Hostname:</b> hellodocker-5b98b98674-xt8t9<br/><b>Visits:</b> 54
+
+PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> minikube ssh "curl -s http://${MINIKUBE_IP}:30080"
+<h3>Hello Yatin from Minikube and Kubernetes!</h3><b>Hostname:</b> hellodocker-5b98b98674-nj7b6<br/><b>Visits:</b> 57
+
