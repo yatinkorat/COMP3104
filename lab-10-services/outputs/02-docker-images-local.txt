@@ -1,4 +1,0 @@
-﻿PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> docker images hellodocker
-IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
-hellodocker:latest   9837e200811d        223MB         54.4MB   U    
-

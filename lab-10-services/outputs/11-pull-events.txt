@@ -1,8 +1,0 @@
-﻿PS C:\_GBC\5th sem\comp3104\lab-10-services\k8s> kubectl get events --field-selector involvedObject.name=hellodocker-5b98b98674-cmkwp --sort-by=.lastTimestamp
-LAST SEEN   TYPE     REASON      OBJECT                             MESSAGE
-20s         Normal   Scheduled   pod/hellodocker-5b98b98674-cmkwp   Successfully assigned default/hellodocker-5b98b98674-cmkwp to minikube
-19s         Normal   Pulling     pod/hellodocker-5b98b98674-cmkwp   Pulling image "yatinkorat/hellodocker:latest"
-13s         Normal   Pulled      pod/hellodocker-5b98b98674-cmkwp   Successfully pulled image "yatinkorat/hellodocker:latest" in 319ms (6.412s including waiting). Image size: 54431787 bytes.
-13s         Normal   Created     pod/hellodocker-5b98b98674-cmkwp   Container created
-13s         Normal   Started     pod/hellodocker-5b98b98674-cmkwp   Container started
-

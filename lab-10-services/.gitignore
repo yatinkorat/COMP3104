@@ -1,0 +1,5 @@
+# Only the Kubernetes files go to GitHub; the submission files are for D2L only
+*
+!.gitignore
+!k8s/
+!k8s/*.yaml
